@@ -1,0 +1,12 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+
+    <diskStore path="java.io.tmpdir"/>
+
+    <cache name="candles"
+           maxEntriesLocalHeap="1000"
+           timeToLiveSeconds="600">
+        <persistence strategy="none"/>
+    </cache>
+
+</ehcache>
